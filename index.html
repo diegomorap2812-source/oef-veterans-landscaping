@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OEF Veterans Landscaping | Cape Coral, FL — Licensed & Insured</title>
+  <meta name="description" content="Veteran-owned landscaping company in Cape Coral, Florida. Sod, tree services, lot clearing, pressure washing & more. Licensed & insured. Free estimates. Call 239-220-7334.">
+  <meta name="keywords" content="landscaping Cape Coral, veteran landscaping Florida, sod installation, tree removal, lot clearing, pressure washing Southwest Florida">
+  <meta property="og:title" content="OEF Veterans Landscaping | Cape Coral, FL">
+  <meta property="og:description" content="Veteran Owned & Operated. Licensed & Insured. Full-service landscaping in Southwest Florida. Free estimates.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ─── RESET & TOKENS ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0a0a0a;
+      --bg-alt:    #0f0f0f;
+      --bg-card:   #141414;
+      --border:    rgba(107,124,63,.18);
+      --olive:     #6b7c3f;
+      --olive-lt:  #85994e;
+      --gold:      #c9a84c;
+      --gold-lt:   #dfc06e;
+      --white:     #ffffff;
+      --gray:      #888888;
+      --gray-lt:   #c8c8c8;
+      --red-flag:  #b22234;
+      --blue-flag: #3c3b6e;
+      --font-head: 'Oswald', sans-serif;
+      --font-body: 'Open Sans', sans-serif;
+      --radius:    3px;
+      --trans:     .22s ease;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ─── UTILITY ─── */
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 1.5rem; }
+
+    section { padding: 6rem 1.5rem; }
+
+    .eyebrow {
+      display: block;
+      font-family: var(--font-head);
+      font-size: .72rem;
+      letter-spacing: .38em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: .75rem;
+    }
+
+    .section-title {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: clamp(2rem, 4vw, 2.9rem);
+      text-transform: uppercase;
+      line-height: 1.02;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+
+    .divider {
+      width: 48px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--olive), var(--gold));
+      margin-bottom: 2.5rem;
+    }
+    .divider.center { margin-left: auto; margin-right: auto; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      font-family: var(--font-head);
+      font-weight: 600;
+      font-size: .92rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: .85rem 2.1rem;
+      border-radius: var(--radius);
+      border: 2px solid transparent;
+      transition: background var(--trans), color var(--trans),
+                  border-color var(--trans), transform var(--trans);
+      cursor: pointer;
+    }
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-solid {
+      background: var(--olive);
+      color: var(--white);
+      border-color: var(--olive);
+    }
+    .btn-solid:hover { background: var(--olive-lt); border-color: var(--olive-lt); }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--gold);
+      border-color: var(--gold);
+    }
+    .btn-outline:hover { background: var(--gold); color: var(--bg); }
+
+    /* ─── NAV ─── */
+    #nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 900;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.1rem 2rem;
+      transition: background .35s ease, padding .3s ease, border-color .35s ease;
+      border-bottom: 1px solid transparent;
+    }
+    #nav.scrolled {
+      background: rgba(10,10,10,.96);
+      padding: .75rem 2rem;
+      border-color: var(--border);
+      backdrop-filter: blur(8px);
+    }
+
+    .nav-brand {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--white);
+      text-decoration: none;
+      line-height: 1.15;
+    }
+    .nav-brand em { color: var(--gold); font-style: normal; }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+    .nav-links a {
+      font-size: .8rem;
+      font-weight: 500;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--gray-lt);
+      text-decoration: none;
+      transition: color var(--trans);
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-links .nav-pill {
+      background: var(--olive);
+      color: var(--white) !important;
+      padding: .45rem 1.15rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--olive);
+    }
+    .nav-links .nav-pill:hover { background: var(--olive-lt); border-color: var(--olive-lt); }
+
+    /* hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      z-index: 1000;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px; height: 2px;
+      background: var(--white);
+      transition: transform .3s, opacity .3s;
+      border-radius: 1px;
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* mobile drawer */
+    #mob-nav {
+      position: fixed;
+      top: 0; right: -100%;
+      width: 72%; max-width: 300px;
+      height: 100vh;
+      background: #0d0d0d;
+      border-left: 1px solid var(--border);
+      padding: 5.5rem 2rem 2rem;
+      z-index: 890;
+      transition: right .32s ease;
+    }
+    #mob-nav.open { right: 0; }
+    #mob-nav a {
+      display: block;
+      font-family: var(--font-head);
+      font-size: 1rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--gray-lt);
+      text-decoration: none;
+      padding: .9rem 0;
+      border-bottom: 1px solid rgba(255,255,255,.05);
+      transition: color var(--trans);
+    }
+    #mob-nav a:hover { color: var(--gold); }
+    #mob-nav .mob-cta {
+      margin-top: 1.5rem;
+      color: var(--gold) !important;
+      border-bottom: none;
+      font-size: 1.05rem;
+    }
+
+    /* ─── HERO ─── */
+    #hero {
+      position: relative;
+      height: 100vh;
+      min-height: 640px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1555117456-af631f9ff82b?fm=jpg&q=80&w=1920&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center 45%;
+      transform: scale(1.06);
+      transition: transform 7s ease;
+    }
+    .hero-bg.loaded { transform: scale(1); }
+
+    /* layered dark gradient */
+    .hero-ov {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg,
+          rgba(10,10,10,.6)  0%,
+          rgba(10,10,10,.58) 45%,
+          rgba(10,10,10,.82) 100%);
+    }
+
+    /* subtle olive-green vignette tint */
+    .hero-tint {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 100%,
+        rgba(30,40,18,.55) 0%,
+        transparent 70%);
+    }
+
+    /* American flag accent — left-side stripes */
+    .flag-stripes {
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 6px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .flag-stripes i {
+      flex: 1;
+      font-style: normal;
+    }
+    .flag-stripes i:nth-child(odd)  { background: var(--red-flag); }
+    .flag-stripes i:nth-child(even) { background: rgba(255,255,255,.7); }
+
+    /* blue canton stars area — top right watermark */
+    .flag-canton {
+      position: absolute;
+      top: 90px; right: 3rem;
+      width: 90px;
+      background: var(--blue-flag);
+      border-radius: 2px;
+      padding: .6rem;
+      opacity: .12;
+      font-size: .65rem;
+      line-height: 1.5;
+      letter-spacing: .18rem;
+      color: var(--white);
+      text-align: center;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 860px;
+      padding: 0 1.5rem;
+    }
+
+    .hero-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      font-family: var(--font-head);
+      font-size: .72rem;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(201,168,76,.35);
+      padding: .3rem .95rem;
+      border-radius: 2px;
+      background: rgba(201,168,76,.07);
+      margin-bottom: 1.15rem;
+    }
+
+    .hero-title {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: clamp(3rem, 10vw, 7.5rem);
+      line-height: .92;
+      letter-spacing: .02em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 1.25rem;
+    }
+    .hero-title .accent { color: var(--olive-lt); }
+
+    .hero-tag {
+      font-size: clamp(.9rem, 1.8vw, 1.1rem);
+      color: var(--gray-lt);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .hero-tag strong { color: var(--gold); font-weight: 600; }
+
+    .hero-bar {
+      width: 56px; height: 2px;
+      background: var(--gold);
+      margin: 1.2rem auto;
+    }
+
+    .hero-badges {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .5rem;
+      margin-bottom: 2.2rem;
+    }
+    .hbadge {
+      font-size: .67rem;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      padding: .28rem .8rem;
+      border-radius: 2px;
+      border: 1px solid rgba(255,255,255,.15);
+      color: var(--gray-lt);
+      background: rgba(255,255,255,.04);
+    }
+    .hbadge.gold {
+      border-color: rgba(201,168,76,.45);
+      color: var(--gold);
+      background: rgba(201,168,76,.07);
+    }
+
+    .hero-ctas {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    /* scroll cue */
+    .scroll-cue {
+      position: absolute;
+      bottom: 2rem; left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      text-align: center;
+      animation: bobble 2.2s ease-in-out infinite;
+    }
+    .scroll-cue span {
+      display: block;
+      font-size: .6rem;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.4);
+      margin-bottom: .4rem;
+    }
+    .scroll-cue svg {
+      display: block;
+      margin: 0 auto;
+      stroke: rgba(255,255,255,.35);
+      fill: none;
+      stroke-width: 1.5;
+    }
+    @keyframes bobble {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%       { transform: translateX(-50%) translateY(7px); }
+    }
+
+    /* ─── TICKER / TRUST BAR ─── */
+    .trust-bar {
+      background: var(--olive);
+      padding: .72rem 0;
+      overflow: hidden;
+      border-top: 1px solid rgba(201,168,76,.3);
+      border-bottom: 1px solid rgba(201,168,76,.3);
+    }
+    .ticker-track {
+      display: flex;
+      width: max-content;
+      animation: ticker 28s linear infinite;
+    }
+    .ticker-item {
+      flex-shrink: 0;
+      font-family: var(--font-head);
+      font-size: .76rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.88);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+    }
+    .ticker-item::after { content: '★'; color: var(--gold); font-size: .6rem; }
+    @keyframes ticker {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ─── SERVICES ─── */
+    #services { background: var(--bg-alt); }
+
+    .services-header { text-align: center; margin-bottom: 3.5rem; }
+    .services-header p {
+      color: var(--gray-lt);
+      max-width: 560px;
+      margin: 0 auto;
+      font-size: .92rem;
+      line-height: 1.85;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 1px;
+      border: 1px solid var(--border);
+      background: var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .svc-card {
+      background: var(--bg-card);
+      padding: 1.6rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: .7rem;
+      position: relative;
+      overflow: hidden;
+      transition: background var(--trans);
+    }
+    .svc-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      height: 2px; width: 0;
+      background: linear-gradient(90deg, var(--olive), var(--gold));
+      transition: width .32s ease;
+    }
+    .svc-card:hover { background: #181818; }
+    .svc-card:hover::after { width: 100%; }
+
+    .svc-icon {
+      width: 42px; height: 42px;
+      background: rgba(107,124,63,.12);
+      border: 1px solid rgba(107,124,63,.28);
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+      transition: background var(--trans), border-color var(--trans);
+    }
+    .svc-card:hover .svc-icon {
+      background: rgba(107,124,63,.22);
+      border-color: var(--olive);
+    }
+
+    .svc-name {
+      font-family: var(--font-head);
+      font-weight: 500;
+      font-size: .88rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: var(--gray-lt);
+      transition: color var(--trans);
+      line-height: 1.3;
+    }
+    .svc-card:hover .svc-name { color: var(--white); }
+
+    .services-footer { text-align: center; margin-top: 3rem; }
+
+    /* ─── ABOUT ─── */
+    #about { background: var(--bg); }
+
+    .about-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .about-img-col { position: relative; }
+
+    .about-img {
+      width: 100%;
+      aspect-ratio: 4/5;
+      object-fit: cover;
+      border-radius: var(--radius);
+      filter: grayscale(12%) contrast(1.06);
+      display: block;
+    }
+
+    /* decorative offset border */
+    .about-img-col::before {
+      content: '';
+      position: absolute;
+      inset: -14px;
+      border: 2px solid rgba(107,124,63,.28);
+      border-radius: var(--radius);
+      pointer-events: none;
+    }
+
+    /* floating badge */
+    .vob-badge {
+      position: absolute;
+      bottom: -18px; right: -18px;
+      width: 108px; height: 108px;
+      background: var(--olive);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border: 4px solid var(--bg);
+      box-shadow: 0 6px 30px rgba(0,0,0,.5);
+      z-index: 1;
+    }
+    .vob-badge .vob-title {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1.4rem;
+      line-height: 1;
+      color: var(--gold);
+    }
+    .vob-badge .vob-sub {
+      font-size: .58rem;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.8);
+      line-height: 1.4;
+      margin-top: .15rem;
+    }
+
+    .about-text p {
+      color: var(--gray-lt);
+      font-size: .94rem;
+      line-height: 1.85;
+      margin-bottom: 1.25rem;
+    }
+    .about-text p strong { color: var(--gold); font-weight: 600; }
+
+    /* Cert badges grid */
+    .certs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .7rem;
+      margin-top: 2rem;
+    }
+    .cert {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: .7rem .9rem;
+      border-radius: var(--radius);
+      transition: border-color var(--trans);
+    }
+    .cert:hover { border-color: var(--olive); }
+    .cert.cert-gold {
+      border-color: rgba(201,168,76,.28);
+      background: rgba(201,168,76,.04);
+    }
+    .cert.cert-gold:hover { border-color: var(--gold); }
+    .cert-ico { font-size: 1.3rem; flex-shrink: 0; }
+    .cert-lbl {
+      font-size: .7rem;
+      font-weight: 600;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--gray-lt);
+      line-height: 1.3;
+    }
+    .cert.cert-gold .cert-lbl { color: var(--gold-lt); }
+
+    /* ─── GALLERY ─── */
+    #gallery { background: var(--bg-alt); }
+
+    .gallery-header { text-align: center; margin-bottom: 2.8rem; }
+    .gallery-header p {
+      color: var(--gray-lt);
+      max-width: 500px;
+      margin: 0 auto;
+      font-size: .88rem;
+      line-height: 1.85;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+    }
+
+    .g-item {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      border-radius: 2px;
+      background: var(--bg-card);
+    }
+    .g-item:nth-child(1) { grid-row: span 2; }
+    .g-item:nth-child(6) { grid-column: span 2; }
+    .g-item:nth-child(8) { grid-column: span 3; }
+
+    .g-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      min-height: 200px;
+      transition: transform .4s ease, filter .3s ease;
+      filter: saturate(.92) contrast(1.04);
+    }
+    .g-item:hover img {
+      transform: scale(1.06);
+      filter: saturate(1.08) contrast(1.04);
+    }
+
+    /* dark scrim on hover */
+    .g-item::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(10,10,10,.5);
+      opacity: 0;
+      transition: opacity .3s;
+      z-index: 1;
+    }
+    .g-item:hover::before { opacity: 1; }
+
+    /* zoom icon */
+    .g-zoom {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%,-50%) scale(0);
+      z-index: 2;
+      background: rgba(201,168,76,.92);
+      width: 46px; height: 46px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      transition: transform .3s ease;
+      pointer-events: none;
+    }
+    .g-item:hover .g-zoom { transform: translate(-50%,-50%) scale(1); }
+
+    /* g-item tall row fix */
+    .g-item:nth-child(1) { min-height: 380px; }
+    .g-item:nth-child(8) { min-height: 220px; }
+
+    .gallery-footer { text-align: center; margin-top: 2.5rem; }
+    .gallery-footer p {
+      color: var(--gray);
+      font-size: .82rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Lightbox */
+    #lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,.96);
+      z-index: 9999;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    #lightbox.open { display: flex; }
+    #lightbox img {
+      max-width: 90vw;
+      max-height: 85vh;
+      object-fit: contain;
+      border-radius: var(--radius);
+      box-shadow: 0 20px 80px rgba(0,0,0,.8);
+    }
+    .lb-close {
+      position: absolute;
+      top: 1.4rem; right: 1.4rem;
+      background: transparent;
+      border: 2px solid rgba(255,255,255,.25);
+      color: var(--white);
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: border-color var(--trans), background var(--trans);
+    }
+    .lb-close:hover { border-color: var(--gold); background: rgba(201,168,76,.12); }
+
+    /* ─── CONTACT ─── */
+    #contact { background: var(--bg); }
+
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1.35fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .contact-intro {
+      color: var(--gray-lt);
+      font-size: .93rem;
+      line-height: 1.85;
+      margin-bottom: 2.5rem;
+    }
+    .contact-intro strong { color: var(--gold); font-weight: 600; }
+
+    /* Phone links */
+    .phone-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-decoration: none;
+      margin-bottom: 1rem;
+    }
+    .phone-ico {
+      width: 50px; height: 50px;
+      background: var(--olive);
+      border-radius: var(--radius);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      transition: background var(--trans);
+    }
+    .phone-row:hover .phone-ico { background: var(--olive-lt); }
+    .phone-lbl {
+      font-size: .68rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--gray);
+    }
+    .phone-num {
+      font-family: var(--font-head);
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: .04em;
+      color: var(--white);
+      transition: color var(--trans);
+    }
+    .phone-row:hover .phone-num { color: var(--gold); }
+
+    /* Email link */
+    .email-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      text-decoration: none;
+      margin-bottom: 2rem;
+    }
+    .email-ico {
+      width: 50px; height: 50px;
+      background: rgba(107,124,63,.14);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .email-lbl {
+      font-size: .68rem;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--gray);
+    }
+    .email-addr {
+      font-size: .88rem;
+      color: var(--gray-lt);
+      transition: color var(--trans);
+    }
+    .email-row:hover .email-addr { color: var(--gold); }
+
+    .vet-highlight {
+      background: linear-gradient(135deg,
+        rgba(107,124,63,.14),
+        rgba(201,168,76,.06));
+      border: 1px solid rgba(107,124,63,.28);
+      border-left: 3px solid var(--gold);
+      padding: 1rem 1.2rem;
+      border-radius: var(--radius);
+      font-size: .85rem;
+      color: var(--gold-lt);
+      font-weight: 500;
+      letter-spacing: .04em;
+    }
+
+    /* Contact form */
+    .form-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 2.4rem;
+      border-radius: var(--radius);
+    }
+    .form-title {
+      font-family: var(--font-head);
+      font-size: 1.35rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: 1.7rem;
+    }
+
+    .form-row-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .fgroup { margin-bottom: 1.15rem; }
+    .fgroup label {
+      display: block;
+      font-size: .68rem;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: .45rem;
+    }
+    .fgroup input,
+    .fgroup select,
+    .fgroup textarea {
+      width: 100%;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.09);
+      border-radius: 2px;
+      padding: .72rem .95rem;
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: .88rem;
+      outline: none;
+      transition: border-color var(--trans), background var(--trans);
+      appearance: none;
+    }
+    .fgroup input::placeholder,
+    .fgroup textarea::placeholder { color: rgba(255,255,255,.22); }
+    .fgroup input:focus,
+    .fgroup select:focus,
+    .fgroup textarea:focus {
+      border-color: var(--olive);
+      background: rgba(107,124,63,.06);
+    }
+    .fgroup select { cursor: pointer; color: rgba(255,255,255,.5); }
+    .fgroup select option { background: #1a1a1a; color: var(--white); }
+    .fgroup textarea { resize: vertical; min-height: 105px; }
+
+    .vet-check {
+      display: flex;
+      align-items: center;
+      gap: .65rem;
+      margin-bottom: 1.25rem;
+    }
+    .vet-check input {
+      width: 16px; height: 16px;
+      accent-color: var(--olive);
+      cursor: pointer;
+    }
+    .vet-check label {
+      font-size: .8rem;
+      color: var(--gray-lt);
+      cursor: pointer;
+      letter-spacing: .03em;
+    }
+
+    .btn-submit {
+      width: 100%;
+      font-family: var(--font-head);
+      font-size: .96rem;
+      font-weight: 600;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: var(--olive);
+      border: none;
+      padding: 1rem;
+      border-radius: var(--radius);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      transition: background var(--trans), transform var(--trans);
+    }
+    .btn-submit:hover { background: var(--olive-lt); transform: translateY(-2px); }
+
+    .form-note {
+      font-size: .68rem;
+      color: var(--gray);
+      text-align: center;
+      margin-top: .9rem;
+      letter-spacing: .04em;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #070707;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-inner {
+      padding: 4rem 1.5rem 2.5rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-brand {
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--white);
+      margin-bottom: .2rem;
+    }
+    .footer-brand em { color: var(--gold); font-style: normal; }
+
+    .footer-sub {
+      font-size: .7rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 1.1rem;
+    }
+
+    .footer-desc {
+      font-size: .83rem;
+      color: var(--gray);
+      line-height: 1.75;
+      margin-bottom: 1.4rem;
+    }
+
+    .footer-tel {
+      display: block;
+      font-family: var(--font-head);
+      font-size: 1.05rem;
+      color: var(--gold);
+      text-decoration: none;
+      margin-bottom: .3rem;
+      letter-spacing: .04em;
+      transition: color var(--trans);
+    }
+    .footer-tel:hover { color: var(--gold-lt); }
+
+    .footer-col-hd {
+      font-family: var(--font-head);
+      font-size: .74rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--white);
+      padding-bottom: .5rem;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      margin-bottom: 1rem;
+    }
+
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: .55rem; }
+    .footer-links a {
+      font-size: .82rem;
+      color: var(--gray);
+      text-decoration: none;
+      transition: color var(--trans);
+    }
+    .footer-links a:hover { color: var(--olive-lt); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.05);
+      padding: 1.5rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-copy { font-size: .75rem; color: var(--gray); }
+    .footer-area { font-size: .75rem; color: var(--gray); letter-spacing: .05em; font-weight: 500; }
+    .footer-vet  { font-size: .75rem; color: var(--olive-lt); letter-spacing: .08em; text-transform: uppercase; }
+
+    /* ─── FADE-IN ANIMATION ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity .55s ease, transform .55s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 1024px) {
+      .about-wrap { grid-template-columns: 1fr; gap: 3.5rem; }
+      .about-img-col { max-width: 420px; margin: 0 auto; }
+      .contact-wrap { grid-template-columns: 1fr; gap: 3rem; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 768px) {
+      #nav { padding: 1rem 1.2rem; }
+      #nav.scrolled { padding: .75rem 1.2rem; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+
+      section { padding: 4rem 1rem; }
+
+      .hero-title { font-size: clamp(2.5rem, 14vw, 4rem); }
+      .flag-canton { display: none; }
+
+      .services-grid { grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); }
+
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .g-item:nth-child(1) { grid-row: span 1; min-height: 200px; }
+      .g-item:nth-child(6) { grid-column: span 1; }
+      .g-item:nth-child(8) { grid-column: span 2; min-height: 180px; }
+
+      .form-row-2 { grid-template-columns: 1fr; }
+      .certs { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+
+    @media (max-width: 480px) {
+      .hero-ctas { flex-direction: column; align-items: center; }
+      .btn { width: 100%; max-width: 280px; justify-content: center; }
+      .hero-badges { gap: .35rem; }
+      .form-box { padding: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ NAV ═══════════════════════════════ -->
+  <nav id="nav">
+    <a href="#hero" class="nav-brand">
+      OEF <em>Veterans</em><br>Landscaping
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Our Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="tel:2392207334" class="nav-pill">Free Estimate</a></li>
+    </ul>
+    <button class="hamburger" id="ham" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <nav id="mob-nav">
+    <a href="#services" onclick="closeMob()">Services</a>
+    <a href="#about"    onclick="closeMob()">About</a>
+    <a href="#gallery"  onclick="closeMob()">Our Work</a>
+    <a href="#contact"  onclick="closeMob()">Contact</a>
+    <a href="tel:2392207334" class="mob-cta">📞 Free Estimate — Call Now</a>
+  </nav>
+
+
+  <!-- ═══════════════════════════════ HERO ══════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-ov"></div>
+    <div class="hero-tint"></div>
+
+    <!-- Subtle left-side American flag stripes -->
+    <div class="flag-stripes" aria-hidden="true">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      <i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+
+    <!-- Stars canton watermark -->
+    <div class="flag-canton" aria-hidden="true">
+      ★ ★ ★ ★ ★<br>
+      ★ ★ ★ ★ ★<br>
+      ★ ★ ★ ★ ★<br>
+      ★ ★ ★ ★ ★<br>
+      ★ ★ ★ ★ ★
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-chip">★ &nbsp;Veteran Owned &amp; Operated&nbsp; ★</div>
+
+      <h1 class="hero-title">
+        OEF<br>Veterans<br><span class="accent">Landscaping</span>
+      </h1>
+
+      <p class="hero-tag">
+        <strong>Licensed &amp; Insured</strong>&nbsp;·&nbsp;Cape Coral, Florida
+      </p>
+
+      <div class="hero-bar"></div>
+
+      <div class="hero-badges">
+        <span class="hbadge gold">🏆 Best of Florida 2024</span>
+        <span class="hbadge gold">⭐ Lehigh Acres Best 2024</span>
+        <span class="hbadge">✅ VOB Verified</span>
+        <span class="hbadge">🎖️ Veteran &amp; First Responder Discount</span>
+        <span class="hbadge">Free Estimates</span>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="tel:2392207334" class="btn btn-solid">📞 Get Free Estimate</a>
+        <a href="#gallery"       class="btn btn-outline">View Our Work ↓</a>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <span>Scroll</span>
+      <svg width="18" height="18" viewBox="0 0 18 18">
+        <polyline points="3,6 9,13 15,6"/>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════ TRUST BAR ════════════════════════════ -->
+  <div class="trust-bar" aria-hidden="true">
+    <div class="ticker-track">
+      <!-- set 1 -->
+      <span class="ticker-item">Sod Installation</span>
+      <span class="ticker-item">Tree Services &amp; Removals</span>
+      <span class="ticker-item">Lot Clearing</span>
+      <span class="ticker-item">Pressure Washing</span>
+      <span class="ticker-item">Stump Grinding</span>
+      <span class="ticker-item">Mulch &amp; Rubber Mulch</span>
+      <span class="ticker-item">Concrete Curbing</span>
+      <span class="ticker-item">Gutter Cleaning</span>
+      <span class="ticker-item">Erosion Control</span>
+      <span class="ticker-item">Paver Installation</span>
+      <span class="ticker-item">Privacy Hedges</span>
+      <span class="ticker-item">Licensed &amp; Insured</span>
+      <!-- duplicate for seamless loop -->
+      <span class="ticker-item">Sod Installation</span>
+      <span class="ticker-item">Tree Services &amp; Removals</span>
+      <span class="ticker-item">Lot Clearing</span>
+      <span class="ticker-item">Pressure Washing</span>
+      <span class="ticker-item">Stump Grinding</span>
+      <span class="ticker-item">Mulch &amp; Rubber Mulch</span>
+      <span class="ticker-item">Concrete Curbing</span>
+      <span class="ticker-item">Gutter Cleaning</span>
+      <span class="ticker-item">Erosion Control</span>
+      <span class="ticker-item">Paver Installation</span>
+      <span class="ticker-item">Privacy Hedges</span>
+      <span class="ticker-item">Licensed &amp; Insured</span>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════════════ SERVICES ══════════════════════════════ -->
+  <section id="services">
+    <div class="container">
+      <div class="services-header">
+        <span class="eyebrow">What We Do</span>
+        <h2 class="section-title">Full-Service Landscaping<br>&amp; Property Solutions</h2>
+        <div class="divider center"></div>
+        <p>From sod installation to lot clearing, OEF Veterans delivers quality craftsmanship across Southwest Florida — backed by veteran discipline and pride of service.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="svc-card reveal">
+          <div class="svc-icon">🌿</div>
+          <div class="svc-name">Sod Installation</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">🪵</div>
+          <div class="svc-name">Mulch &amp; Rubber Mulch</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">🪨</div>
+          <div class="svc-name">Decorative Rock &amp; Shell</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">⬛</div>
+          <div class="svc-name">Concrete Curbing &amp; Plastic Edging</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">🧹</div>
+          <div class="svc-name">Yard Cleanups &amp; Debris Removal</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">💦</div>
+          <div class="svc-name">Pressure Washing &amp; Paver Installation</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">🌳</div>
+          <div class="svc-name">Tree Services &amp; Removals</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">🌱</div>
+          <div class="svc-name">Privacy Hedges</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">🏔️</div>
+          <div class="svc-name">Erosion Control</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">🚜</div>
+          <div class="svc-name">Lot Clearing &amp; Grapple Services</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">⚙️</div>
+          <div class="svc-name">Stump Grinding</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">🏗️</div>
+          <div class="svc-name">Fill Dirt</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">📬</div>
+          <div class="svc-name">Mailbox Installs</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">🎨</div>
+          <div class="svc-name">Painting</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">🏠</div>
+          <div class="svc-name">Gutter Cleaning</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">🌷</div>
+          <div class="svc-name">Bed Installs</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">⛏️</div>
+          <div class="svc-name">Tear Outs</div>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">📐</div>
+          <div class="svc-name">Grading</div>
+        </div>
+      </div>
+
+      <div class="services-footer">
+        <a href="tel:2392207334" class="btn btn-solid">
+          Get Your Free Estimate &nbsp;·&nbsp; 239-220-7334
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════ ABOUT ════════════════════════════════ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-wrap">
+
+        <div class="about-img-col reveal">
+          <img
+            class="about-img"
+            src="https://images.unsplash.com/photo-1683316924890-6a8c5ab10d29?fm=jpg&q=80&w=900&auto=format&fit=crop"
+            alt="Professional landscaping crew at work"
+            loading="lazy"
+          >
+          <div class="vob-badge">
+            <span class="vob-title">VOB</span>
+            <span class="vob-sub">Verified<br>Veteran<br>Business</span>
+          </div>
+        </div>
+
+        <div class="about-text reveal">
+          <span class="eyebrow">Our Story</span>
+          <h2 class="section-title">Built on Service.<br>Built to Last.</h2>
+          <div class="divider"></div>
+
+          <p>
+            OEF Veterans Landscaping was founded by <strong>veterans who served in Operation Enduring Freedom</strong>, bringing the same commitment, discipline, and attention to detail from the battlefield to your backyard.
+          </p>
+          <p>
+            Based in <strong>Cape Coral, Florida</strong>, we proudly serve all of Southwest Florida with a full range of landscaping and property maintenance services. Whether it's a simple cleanup or a complete lot transformation, we treat every project like a mission — and we don't leave until the job is done right.
+          </p>
+          <p>
+            We offer <strong>special discounts for veterans and first responders</strong> because we know the sacrifice you've made. Licensed, insured, and recognized among the best in Florida — OEF Veterans is the team your property deserves.
+          </p>
+
+          <div class="certs">
+            <div class="cert cert-gold reveal">
+              <span class="cert-ico">🏆</span>
+              <span class="cert-lbl">Voted Best of Florida 2024</span>
+            </div>
+            <div class="cert cert-gold reveal">
+              <span class="cert-ico">⭐</span>
+              <span class="cert-lbl">Lehigh Acres Best of 2024</span>
+            </div>
+            <div class="cert reveal">
+              <span class="cert-ico">✅</span>
+              <span class="cert-lbl">VOB Verified Veteran Business</span>
+            </div>
+            <div class="cert reveal">
+              <span class="cert-ico">🎖️</span>
+              <span class="cert-lbl">Veteran &amp; First Responder Discount</span>
+            </div>
+            <div class="cert reveal">
+              <span class="cert-ico">🛡️</span>
+              <span class="cert-lbl">Licensed &amp; Insured</span>
+            </div>
+            <div class="cert reveal">
+              <span class="cert-ico">💰</span>
+              <span class="cert-lbl">Free Estimates — No Obligation</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════ GALLERY ══════════════════════════════ -->
+  <section id="gallery">
+    <div class="container">
+      <div class="gallery-header">
+        <span class="eyebrow">Our Work</span>
+        <h2 class="section-title">See the Difference</h2>
+        <div class="divider center"></div>
+        <p>Every project reflects our commitment to quality. These are just a few of the properties we've transformed across Cape Coral and Southwest Florida.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Local photos: drop work1.jpg – work5.jpg into the /images folder -->
+        <div class="g-item" onclick="openLB(this)">
+          <img src="images/work1.jpg" alt="Landscaping project 1" loading="lazy">
+          <div class="g-zoom">🔍</div>
+        </div>
+        <div class="g-item" onclick="openLB(this)">
+          <img src="images/work2.jpg" alt="Landscaping project 2" loading="lazy">
+          <div class="g-zoom">🔍</div>
+        </div>
+        <div class="g-item" onclick="openLB(this)">
+          <img src="images/work3.jpg" alt="Landscaping project 3" loading="lazy">
+          <div class="g-zoom">🔍</div>
+        </div>
+        <div class="g-item" onclick="openLB(this)">
+          <img src="images/work4.jpg" alt="Landscaping project 4" loading="lazy">
+          <div class="g-zoom">🔍</div>
+        </div>
+        <div class="g-item" onclick="openLB(this)">
+          <img src="images/work5.jpg" alt="Landscaping project 5" loading="lazy">
+          <div class="g-zoom">🔍</div>
+        </div>
+        <!-- Unsplash texture fills -->
+        <div class="g-item" onclick="openLB(this)">
+          <img
+            src="https://images.unsplash.com/photo-1740823434562-e81d21a4f5c2?fm=jpg&q=80&w=1200&auto=format&fit=crop"
+            alt="Garden bed with mulch and plants" loading="lazy">
+          <div class="g-zoom">🔍</div>
+        </div>
+        <div class="g-item" onclick="openLB(this)">
+          <img
+            src="https://images.unsplash.com/photo-1745523685696-4e965dcfd9ae?fm=jpg&q=80&w=700&auto=format&fit=crop"
+            alt="Decorative gravel and rock landscaping" loading="lazy">
+          <div class="g-zoom">🔍</div>
+        </div>
+        <div class="g-item" onclick="openLB(this)">
+          <img
+            src="https://images.unsplash.com/photo-1526326313238-6d7584c46fd5?fm=jpg&q=80&w=1600&auto=format&fit=crop"
+            alt="Lush green lawn after landscaping" loading="lazy">
+          <div class="g-zoom">🔍</div>
+        </div>
+      </div>
+
+      <div class="gallery-footer">
+        <p>Follow us on social media for more photos and project updates.</p>
+        <a href="tel:2392207334" class="btn btn-outline">Schedule Your Project — Call Now</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════ CONTACT ═══════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-wrap">
+
+        <!-- Left: contact details -->
+        <div>
+          <span class="eyebrow">Get In Touch</span>
+          <h2 class="section-title">Ready to Get<br>Started?</h2>
+          <div class="divider"></div>
+          <p class="contact-intro">
+            Call or text for a <strong>free, no-obligation estimate</strong>. We respond fast and show up on time — that's the veteran way.
+          </p>
+
+          <div>
+            <a href="tel:2392207334" class="phone-row">
+              <div class="phone-ico">📞</div>
+              <div>
+                <div class="phone-lbl">Main Line</div>
+                <div class="phone-num">239-220-7334</div>
+              </div>
+            </a>
+            <a href="tel:2396455380" class="phone-row">
+              <div class="phone-ico">📱</div>
+              <div>
+                <div class="phone-lbl">Secondary Line</div>
+                <div class="phone-num">239-645-5380</div>
+              </div>
+            </a>
+          </div>
+
+          <a href="mailto:oefveteranslandscaping@gmail.com" class="email-row">
+            <div class="email-ico">✉️</div>
+            <div>
+              <div class="email-lbl">Email Us</div>
+              <div class="email-addr">oefveteranslandscaping@gmail.com</div>
+            </div>
+          </a>
+
+          <div class="vet-highlight">
+            🎖️&nbsp; Veterans &amp; First Responders receive a special discount —<br>
+            mention it when you call!
+          </div>
+        </div>
+
+        <!-- Right: estimate form (UI only) -->
+        <div class="form-box">
+          <div class="form-title">Request a Free Estimate</div>
+          <form onsubmit="return false;">
+            <div class="form-row-2">
+              <div class="fgroup">
+                <label for="f-fname">First Name</label>
+                <input type="text" id="f-fname" placeholder="John" autocomplete="given-name">
+              </div>
+              <div class="fgroup">
+                <label for="f-lname">Last Name</label>
+                <input type="text" id="f-lname" placeholder="Smith" autocomplete="family-name">
+              </div>
+            </div>
+            <div class="form-row-2">
+              <div class="fgroup">
+                <label for="f-phone">Phone Number</label>
+                <input type="tel" id="f-phone" placeholder="(239) 000-0000" autocomplete="tel">
+              </div>
+              <div class="fgroup">
+                <label for="f-email">Email Address</label>
+                <input type="email" id="f-email" placeholder="you@email.com" autocomplete="email">
+              </div>
+            </div>
+            <div class="fgroup">
+              <label for="f-service">Service Interested In</label>
+              <select id="f-service">
+                <option value="" disabled selected>Select a service…</option>
+                <option>Sod Installation</option>
+                <option>Mulch &amp; Rubber Mulch</option>
+                <option>Decorative Rock &amp; Shell</option>
+                <option>Concrete Curbing &amp; Plastic Edging</option>
+                <option>Yard Cleanups &amp; Debris Removal</option>
+                <option>Pressure Washing &amp; Paver Installation</option>
+                <option>Tree Services &amp; Removals</option>
+                <option>Privacy Hedges</option>
+                <option>Erosion Control</option>
+                <option>Lot Clearing &amp; Grapple Services</option>
+                <option>Stump Grinding</option>
+                <option>Fill Dirt</option>
+                <option>Mailbox Installs</option>
+                <option>Painting</option>
+                <option>Gutter Cleaning</option>
+                <option>Bed Installs</option>
+                <option>Tear Outs</option>
+                <option>Grading</option>
+                <option>Multiple / Other</option>
+              </select>
+            </div>
+            <div class="fgroup">
+              <label for="f-msg">Project Details</label>
+              <textarea id="f-msg" placeholder="Tell us about your project, property size, or any specific needs…"></textarea>
+            </div>
+            <div class="vet-check">
+              <input type="checkbox" id="f-vet">
+              <label for="f-vet">I am a Veteran or First Responder — apply discount</label>
+            </div>
+            <button type="submit" class="btn-submit">
+              Send Request &nbsp;✈
+            </button>
+            <p class="form-note">We respond within 24 hours. Your info is never shared.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════ FOOTER ════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner container">
+      <div class="footer-grid">
+
+        <div>
+          <div class="footer-brand">OEF <em>Veterans</em> Landscaping</div>
+          <div class="footer-sub">Veteran Owned &amp; Operated · Licensed &amp; Insured</div>
+          <p class="footer-desc">
+            Professional landscaping and property services for Cape Coral and all of Southwest Florida. Built on the values of service, integrity, and hard work.
+          </p>
+          <a href="tel:2392207334" class="footer-tel">📞 239-220-7334</a>
+          <a href="tel:2396455380" class="footer-tel">📱 239-645-5380</a>
+        </div>
+
+        <div>
+          <div class="footer-col-hd">Services</div>
+          <ul class="footer-links">
+            <li><a href="#services">Sod Installation</a></li>
+            <li><a href="#services">Tree Services</a></li>
+            <li><a href="#services">Lot Clearing</a></li>
+            <li><a href="#services">Pressure Washing</a></li>
+            <li><a href="#services">Stump Grinding</a></li>
+            <li><a href="#services">Mulch &amp; Rock</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-hd">More Services</div>
+          <ul class="footer-links">
+            <li><a href="#services">Erosion Control</a></li>
+            <li><a href="#services">Concrete Curbing</a></li>
+            <li><a href="#services">Privacy Hedges</a></li>
+            <li><a href="#services">Gutter Cleaning</a></li>
+            <li><a href="#services">Bed Installs</a></li>
+            <li><a href="#services">Grading</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-hd">Contact</div>
+          <ul class="footer-links">
+            <li><a href="tel:2392207334">239-220-7334</a></li>
+            <li><a href="tel:2396455380">239-645-5380</a></li>
+            <li><a href="mailto:oefveteranslandscaping@gmail.com">Email Us</a></li>
+            <li><a href="#contact">Free Estimate</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Our Work</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <span class="footer-copy" id="footer-year">© 2025 OEF Veterans Landscaping. All rights reserved.</span>
+      <span class="footer-area">📍 Serving Cape Coral &amp; Southwest Florida</span>
+      <span class="footer-vet">🎖️ Veteran Owned &amp; Operated</span>
+    </div>
+  </footer>
+
+
+  <!-- ══════════════════════════ LIGHTBOX ══════════════════════════════ -->
+  <div id="lightbox" onclick="closeLB(event)">
+    <button class="lb-close" onclick="closeLB()">✕</button>
+    <img src="" alt="" id="lb-img">
+  </div>
+
+
+  <!-- ══════════════════════════ SCRIPTS ═══════════════════════════════ -->
+  <script>
+    /* ── Nav scroll effect ── */
+    const navEl = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      navEl.classList.toggle('scrolled', window.scrollY > 50);
+    }, { passive: true });
+
+    /* ── Hero background lazy load with zoom-out ── */
+    const heroBg = document.getElementById('heroBg');
+    const bgImg = new Image();
+    bgImg.onload = () => heroBg.classList.add('loaded');
+    bgImg.src = 'https://images.unsplash.com/photo-1555117456-af631f9ff82b?fm=jpg&q=80&w=1920&auto=format&fit=crop';
+
+    /* ── Mobile nav ── */
+    const ham    = document.getElementById('ham');
+    const mobNav = document.getElementById('mob-nav');
+    ham.addEventListener('click', () => {
+      ham.classList.toggle('open');
+      mobNav.classList.toggle('open');
+    });
+    function closeMob() {
+      ham.classList.remove('open');
+      mobNav.classList.remove('open');
+    }
+    // close on outside click
+    document.addEventListener('click', e => {
+      if (mobNav.classList.contains('open') &&
+          !mobNav.contains(e.target) && !ham.contains(e.target)) {
+        closeMob();
+      }
+    });
+
+    /* ── Lightbox ── */
+    function openLB(el) {
+      const img = el.querySelector('img');
+      const lb  = document.getElementById('lightbox');
+      document.getElementById('lb-img').src = img.src;
+      document.getElementById('lb-img').alt = img.alt;
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLB(e) {
+      if (!e || e.target !== document.getElementById('lb-img')) {
+        document.getElementById('lightbox').classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLB();
+    });
+
+    /* ── Scroll reveal ── */
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+    /* ── Dynamic copyright year ── */
+    document.getElementById('footer-year').textContent =
+      `© ${new Date().getFullYear()} OEF Veterans Landscaping. All rights reserved.`;
+  </script>
+</body>
+</html>
